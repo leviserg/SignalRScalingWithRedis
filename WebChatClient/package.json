@@ -1,0 +1,16 @@
+{
+  "name": "webchatclient",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    //"@microsoft/signalr": "^6.0.10" // copied locally in wwwroot/js/signalr.min.js
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

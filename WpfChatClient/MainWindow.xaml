@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfChatClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfChatClient"
+        mc:Ignorable="d"
+        Title="WpfChatClient" Height="515" Width="653" Closed="Shutdown">
+    <Grid x:Name="WpfChatClient" Margin="10,10,10,11">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="607*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="connectBtn" Content="Connect/Disconnect" HorizontalAlignment="Left" Height="35" Margin="1,80,0,0" VerticalAlignment="Top" Width="138" Click="connectBtn_Click" Grid.Column="1"/>
+        <Label x:Name="connectionStatus" Content="Disconnected" HorizontalAlignment="Left" Margin="2,53,0,0" VerticalAlignment="Top" Width="92" Foreground="Red" Grid.Column="1" Height="26"/>
+        <TextBox x:Name="userNameTxtBox" HorizontalAlignment="Left" Height="23" Margin="1,151,0,0" TextWrapping="Wrap" Text="Anonymous" VerticalAlignment="Top" Width="138" SelectionTextBrush="#FFF70606" Grid.Column="1"/>
+        <Button x:Name="sendMessageBtn" Content="Send message" HorizontalAlignment="Left" Height="22" Margin="1,300,0,0" VerticalAlignment="Top" Width="138" Click="sendMessageBtn_Click" Grid.Column="1"/>
+        <Label Content="Set your name:" HorizontalAlignment="Left" Margin="1,128,0,0" VerticalAlignment="Top" Width="92" FontSize="9" Foreground="#FF838383" Grid.Column="1" Height="22"/>
+        <TextBox x:Name="messageTxtBox" HorizontalAlignment="Left" Height="84" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" ToolTip="Type your chat message here" Grid.Column="1" Margin="1,200,0,0"/>
+        <RichTextBox x:Name="chatTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="438" Margin="145,6,0,0" VerticalAlignment="Top" Width="462">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button x:Name="subscribeBtn" Content="Subscribe" HorizontalAlignment="Left" Height="22" Margin="1,339,0,0" VerticalAlignment="Top" Width="138" Click="subscribeBtn_Click" Grid.Column="1"/>
+        <Label Content="Type your message:" HorizontalAlignment="Left" Margin="1,179,0,0" VerticalAlignment="Top" Width="92" FontSize="9" Foreground="#FF838383" Grid.Column="1" Height="22"/>
+        <Button x:Name="sendStreamToServerBtn" Content="Send stream to server" HorizontalAlignment="Left" Height="22" Margin="4,386,0,0" VerticalAlignment="Top" Width="138" Click="sendStreamToServerBtn_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="readStreamFromServerBtn" Content="Read stream from server" HorizontalAlignment="Left" Height="22" Margin="1,422,0,0" VerticalAlignment="Top" Width="138" Click="readStreamFromServerBtn_Click" Grid.Column="1"/>
+        <Label Content="Connect to port:" HorizontalAlignment="Left" Margin="2,1,0,0" VerticalAlignment="Top" Width="92" FontSize="9" Foreground="#FF838383" Grid.Column="1" Height="22"/>
+        <TextBox x:Name="serverPortTxtBox" HorizontalAlignment="Left" Height="23" Margin="1,24,0,0" TextWrapping="Wrap" Text="http://localhost:8000" VerticalAlignment="Top" Width="138" SelectionTextBrush="#FFF70606" Grid.Column="1" InputScope="Number"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "Server\Server.csproj", "{7E4CC599-3218-435F-9099-AB51825BAB78}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{0A8AB9EC-74AE-484C-860E-1A5E7E7C4DFC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfChatClient", "WpfChatClient\WpfChatClient.csproj", "{93F62B2F-42F0-4325-82FE-9A9616EF12C7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebChatClient", "WebChatClient\WebChatClient.csproj", "{F5907D55-C103-4EA6-9AF1-86432B71C108}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DockerReadMe", "DockerReadMe", "{56DD2F08-C11B-42A5-B5C1-795E445BE954}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		readme_docker_redis_deploy.txt = readme_docker_redis_deploy.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E4CC599-3218-435F-9099-AB51825BAB78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E4CC599-3218-435F-9099-AB51825BAB78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E4CC599-3218-435F-9099-AB51825BAB78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E4CC599-3218-435F-9099-AB51825BAB78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A8AB9EC-74AE-484C-860E-1A5E7E7C4DFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A8AB9EC-74AE-484C-860E-1A5E7E7C4DFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A8AB9EC-74AE-484C-860E-1A5E7E7C4DFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A8AB9EC-74AE-484C-860E-1A5E7E7C4DFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93F62B2F-42F0-4325-82FE-9A9616EF12C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93F62B2F-42F0-4325-82FE-9A9616EF12C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93F62B2F-42F0-4325-82FE-9A9616EF12C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93F62B2F-42F0-4325-82FE-9A9616EF12C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5907D55-C103-4EA6-9AF1-86432B71C108}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5907D55-C103-4EA6-9AF1-86432B71C108}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5907D55-C103-4EA6-9AF1-86432B71C108}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5907D55-C103-4EA6-9AF1-86432B71C108}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77C4939E-6D6D-473A-BA44-1EBB572D9652}
+	EndGlobalSection
+EndGlobal
